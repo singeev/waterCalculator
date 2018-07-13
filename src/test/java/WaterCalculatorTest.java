@@ -42,4 +42,16 @@ public class WaterCalculatorTest {
         int[] badLandscape = {1,2,3,-7,4,90};
         waterCalculator.calculateWaterAmount(badLandscape);
     }
+
+    @Test
+    public void shouldThrowAnExceptionIfLandscapeIsNull() {
+        thrown.expect(LandscapeValidationException.class);
+        waterCalculator.calculateWaterAmount(null);
+    }
+
+    @Test
+    public void shouldThrowAnExceptionIfLandscapeIsEmpty() {
+        thrown.expect(LandscapeValidationException.class);
+        waterCalculator.calculateWaterAmount(new int[]{});
+    }
 }

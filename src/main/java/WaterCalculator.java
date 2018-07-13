@@ -42,6 +42,9 @@ public class WaterCalculator {
     }
 
     private void validateLandscape(int[] landscape) {
+        if(landscape == null || landscape.length == 0) {
+            throw new LandscapeValidationException("Landscape is empty!");
+        }
         if(landscape.length > 32000) {
             throw new LandscapeValidationException("Landscape positions number is greater than 32000!");
         }
