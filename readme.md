@@ -25,5 +25,10 @@ If you type incorrect data the program will show you proper error massage.
 **How to run program**
 
 This is a maven based java 8 project.
-First, you need to package project by command "mvn package". As a result you'll get "waterCalculator-1.0.jar" file in \targer folder  and cobertura code coverage report in \target\site\cobertura\index.html
-To start program and begin to calculate water run command "java -cp target\waterCalculator-1.0.jar App".
+
+First, you need to package project by command `mvn package`. 
+As a result you'll get:
+- `waterCalculator-1.0.jar` file in `\target` folder  
+- cobertura code coverage report in `\target\site\cobertura\index.html`
+
+To start program and begin to calculate water run command `java -cp target\waterCalculator-1.0.jar App`.
